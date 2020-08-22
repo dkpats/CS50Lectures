@@ -1,0 +1,11 @@
+Lecture 1 - Git
+
+Git allows us to more easily track changes in your code.
+Makes it easy to collaborate
+1 version stored in repository. Both my partner and I can get access to the file, update ourselves, and we can both push our changes to the server.
+We can then each PULL changes to access the latest version of the codebase.
+Allows us to test changes on branches without affecting the original codebase.
+Allows us to revert back to old code if we make changes we don't want.
+Goal of lecture is to get used to using Git
+
+Many differenet services for hosing repositories, GitHub is very popular.
