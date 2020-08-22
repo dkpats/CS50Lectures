@@ -18,3 +18,6 @@ save points are called 'commits'
 There are a few steps to commits.
 - We need to 'add' files to track. The 'add' command will do this for us. Eg. git add hello.html. This allows us to pick only certain files to make commits to, in case we're not interested in saving changes from other files just yet.
 'git commit -m "message"', where the message is a brief description or note that explains the changes you made
+'git status' will tell us what's happing currently in this version of the respository
+'git add .' will add all files in directory
+'git commit -am "message"' will add all files in the directory AND commit with a message
