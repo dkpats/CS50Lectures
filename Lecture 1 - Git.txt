@@ -9,3 +9,12 @@ Allows us to revert back to old code if we make changes we don't want.
 Goal of lecture is to get used to using Git
 
 Many differenet services for hosing repositories, GitHub is very popular.
+
+Cloning takes a URL and coppies the code to your computer locally to whatever directory is active
+'ls' will show all files in folder
+'cd' will change directories
+'touch' creates a new file, if followed by a file name
+save points are called 'commits'
+There are a few steps to commits.
+- We need to 'add' files to track. The 'add' command will do this for us. Eg. git add hello.html. This allows us to pick only certain files to make commits to, in case we're not interested in saving changes from other files just yet.
+'git commit -m "message"', where the message is a brief description or note that explains the changes you made
