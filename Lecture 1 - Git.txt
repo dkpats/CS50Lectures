@@ -21,4 +21,4 @@ There are a few steps to commits.
 'git status' will tell us what's happing currently in this version of the respository
 'git add .' will add all files in directory
 'git commit -am "message"' will add all files in the directory AND commit with a message
-'git pull' allows us to get the latest files from the repository Local change to lecture notes for testing merge conflicts
+CHANGE VIA GITHUB 'git pull' allows us to get the latest files from the repository Local change to lecture notes for testing merge conflicts
