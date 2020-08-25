@@ -26,6 +26,7 @@ There are a few steps to commits.
 'git reset --hard <commit hash>' will resut everything to the commit given. Alternatively, you could rest your repo to the master version by using git reset --hard origin/master
 'git branch' just tells you what branches exist and which one you are on, denoted by a '*'
 'git checkout -b "branch name" will create a new branch with name "branch name" and switch to that branch. This is usefull for working on features and leaving the master or other working branches alone. The changes, once coeplete on say, a feature branch, can then be merged back into the master branch.
+'git checkout <branch of choice> changes what branch you are on to <branch of choice>
 
 Forking in GitHub allows you to essentially copy another repository and work on it yourself. You can then submit a pull request to the repository that the owner can then evaluate and add (or not) to their repo
 GitHub pages, which can be enabled in a repository to host webpages. Good for simple deployment of a website
