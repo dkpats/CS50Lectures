@@ -1,3 +1,4 @@
 Lecture 2 - Python
 
 Python is not a typed language.
+Python inludes a type 'NoneType", keyword 'None'
