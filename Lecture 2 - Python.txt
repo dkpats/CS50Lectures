@@ -7,3 +7,10 @@ f strings are an efficient way to pull variables into strings
 Python uses indentation (whitespace I think) to know if we are in a codeblock
 Python does not need a boolean necessarily for conditional statements, but he didn't go into detail yet.
 In if statements, Python syntax is "elif" not "else if"
+The input function by default will return a string.
+Using the int(<non-integer-variable>) function, you can convert to ingegers.
+list - A mutable data type that can store anything.
+tuple - is a sequence of immutable values
+set - A collection of unique values, unordered.
+dict - collection of key-value pairs, what you look up is the key (the word in the example of the dictionary), and what you get when you do the looking up is the value (the definition in the dictionary example)
+
