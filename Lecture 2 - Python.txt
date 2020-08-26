@@ -4,3 +4,5 @@ Python is not a typed language.
 Python inludes a type 'NoneType", keyword 'None'
 Created name.Py
 f strings are an efficient way to pull variables into strings
+Python uses indentation (whitespace I think) to know if we are in a codeblock
+Python does not need a boolean necessarily for conditional statements, but he didn't go into detail yet.
