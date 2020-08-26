@@ -1,2 +1,3 @@
 Lecture 2 - Python
 
+Python is not a typed language.
