@@ -2,3 +2,5 @@ Lecture 2 - Python
 
 Python is not a typed language.
 Python inludes a type 'NoneType", keyword 'None'
+Created name.Py
+f strings are an efficient way to pull variables into strings
