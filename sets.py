@@ -14,5 +14,8 @@ print(f"The set has {len(s)} elements.")
 s.remove(2)
 
 print(s)
+
 print(f"The set now has {len(s)} elements.")
-print(f"The 1st element length is {len(s[0])}.")
+
+# The following line will not work because lists are not indexed.
+print(f"The first element is length{len(s[0])}.")
