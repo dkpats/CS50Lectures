@@ -11,6 +11,8 @@ The input function by default will return a string.
 Using the int(<non-integer-variable>) function, you can convert to ingegers.
 list - A mutable data type that can store anything.
 tuple - is a sequence of immutable values
-set - A collection of unique values, unordered.
+set - A collection of unique values, unordered and unindexed. So an element is either in a set or not, and if it is, has no defined index or location.
 dict - collection of key-value pairs, what you look up is the key (the word in the example of the dictionary), and what you get when you do the looking up is the value (the definition in the dictionary example)
-
+'#' will make a line a comment
+s = set() will create a set with nothing inside of in
+The function len() can give us the length of an object that is indexed.
