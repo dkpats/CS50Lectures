@@ -16,3 +16,5 @@ dict - collection of key-value pairs, what you look up is the key (the word in t
 '#' will make a line a comment
 s = set() will create a set with nothing inside of in
 The function len() can give us the length of an object that is indexed.
+Loop syntax: for i in <list> or for i in range(<some number>)
+Dictionary syntax: dictionary1 = {d1:el1, d2:el2...}. And, you can say dictionary1[d5] = el5 
