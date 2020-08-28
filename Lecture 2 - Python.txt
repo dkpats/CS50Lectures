@@ -18,3 +18,13 @@ s = set() will create a set with nothing inside of in
 The function len() can give us the length of an object that is indexed.
 Loop syntax: for i in <list> or for i in range(<some number>)
 Dictionary syntax: dictionary1 = {d1:el1, d2:el2...}. And, you can say dictionary1[d5] = el5 
+You can import functions from other files. The syntax is: from <> import <>.
+Either you can import the specific funciton and simply use it, or import an entire module (file) and use dot notation to use the function, eg. moduleName.functionName()
+Creating classes requires starting the following way:
+class ClassName():
+    def __init__(self, )
+The __init__ method called a magic method, so that when we create an opbject of this class, it does something. 
+So any time a class object is made, it needs to initialize. We also need to give it a parameter "self".
+A "method" is a function that operates on an object.
+"self" represents the object. This helps us reference the specific instances of the object.
+0 can evaluate to false, so you can use 0 to evaluate something as false.
