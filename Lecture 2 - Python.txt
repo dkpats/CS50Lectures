@@ -28,3 +28,4 @@ So any time a class object is made, it needs to initialize. We also need to give
 A "method" is a function that operates on an object.
 "self" represents the object. This helps us reference the specific instances of the object.
 0 can evaluate to false, so you can use 0 to evaluate something as false.
+After creating and running Classes.py, I realized using the for loop syntax "for i in <list>" for lists doesn't always look at the elements in the same order.
