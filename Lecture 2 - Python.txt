@@ -29,3 +29,8 @@ A "method" is a function that operates on an object.
 "self" represents the object. This helps us reference the specific instances of the object.
 0 can evaluate to false, so you can use 0 to evaluate something as false.
 After creating and running Classes.py, I realized using the for loop syntax "for i in <list>" for lists doesn't always look at the elements in the same order.
+Decorators - functions that take in other functions and provide additional functionality.
+To use a decorator on a function, write @<decoratorName> before the function.
+Lambda functions - a short one line function, but the declaration and single line of function code condensed into one line.
+Error Handling - Using try and except blocks, we can better manage error messages that users see.
+Importing the sys module allows for the exit function. A 1 input to that function generally means something went wrong.
