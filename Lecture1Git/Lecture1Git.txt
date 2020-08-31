@@ -1,0 +1,34 @@
+Lecture 1 - Git
+
+Git allows us to more easily track changes in your code.
+Makes it easy to collaborate
+1 version stored in repository. Both my partner and I can get access to the file, update ourselves, and we can both push our changes to the server.
+We can then each PULL changes to access the latest version of the codebase.
+Allows us to test changes on branches without affecting the original codebase.
+Allows us to revert back to old code if we make changes we don't want.
+Goal of lecture is to get used to using Git
+
+Many differenet services for hosing repositories, GitHub is very popular.
+
+Cloning takes a URL and coppies the code to your computer locally to whatever directory is active
+'ls' will show all files in folder
+'cd' will change directories
+'touch' creates a new file, if followed by a file name
+save points are called 'commits'
+There are a few steps to commits.
+- We need to 'add' files to track. The 'add' command will do this for us. Eg. git add hello.html. This allows us to pick only certain files to make commits to, in case we're not interested in saving changes from other files just yet.
+'git commit -m "message"', where the message is a brief description or note that explains the changes you made
+'git status' will tell us what's happing currently in this version of the respository
+'git add .' will add all files in directory
+'git commit -am "message"' will add all files in the directory AND commit with a message
+'git pull' allows us to get the latest files from the repository Local change to lecture notes for testing merge conflicts
+'git log' will list your commits, the commit message, and the commit hash. You can press q to quit
+'git reset --hard <commit hash>' will resut everything to the commit given. Alternatively, you could rest your repo to the master version by using git reset --hard origin/master
+'git branch' just tells you what branches exist and which one you are on, denoted by a '*'
+'git checkout -b <new branch name> will create a new branch with name "branch name" and switch to that branch. This is usefull for working on features and leaving the master or other working branches alone. The changes, once coeplete on say, a feature branch, can then be merged back into the master branch.
+'git checkout <branch of choice>' changes what branch you are on to <branch of choice>
+'git merge <branch of choice>' will merge the <branch of choice> into your current branch.
+Merge conflicts can occur. Git will try to resolve them automatically, but change to the same line will cause a conflict, which git will ask you to resolve in the file my choosing 'ours' or 'theirs' changes
+Forking in GitHub allows you to essentially copy another repository and work on it yourself. You can then submit a pull request to the repository that the owner can then evaluate and add (or not) to their repo
+GitHub pages, which can be enabled in a repository to host webpages. Good for simple deployment of a website
+CONGRATULATIONS! You've finished the first lecture with good notes!!!

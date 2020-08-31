@@ -1,4 +1,4 @@
-houses = {"Harry":"Grifyndor", "Draco":"Slytherin"}
+houses = {"Harry":"Gryffindor", "Draco":"Slytherin"}
 
 houses = {"Cedric":"Hufflepuff"}
 
