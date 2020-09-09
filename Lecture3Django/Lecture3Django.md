@@ -54,7 +54,13 @@ Notes will follow the folling format:
 - `manage.py` is a file we'll use to interact with the project, but not a file we're going to make a lot (or any) changes to
 - `urls.py` is a table of contents for all the URLs on my application
 - `python manage.py <command>` will be how we use `manage.py`. We can use the `runserver` command to launch our project.
-
+- Django projects consist of one or more Django applications. Think Google, with images, maps, etc.
+- `Ctrl + C` will exit a Django app running (at least the default in development mode) 
+- we can start a Django Application by running `'manage.py' startapp <appname>`
+- You then need to install this app by configuring settings.py, by adding the `<appname>` to `INSTALLED_APPS`
+- each view will be something a user might want to see
+- once you create a view for the applicaion, you'll need to let it know what URL to visit to get that view. For this, we'll create a new file in the hello directory that contains our URLs
+- then, you need to tell the project what apps to include and the URLs to access them, by updating the `urls.py` file in the project folder
 
 [1]: https://youtu.be/w8q0C-C1js4?t=0
 [2]: https://youtu.be/w8q0C-C1js4?t=160
