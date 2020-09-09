@@ -38,10 +38,11 @@ Notes will follow the folling format:
     >
     >`...`
     
-    - this might be read as:
-        > *The server processed your request used HTTP version 1.1, and your response code is 200, or, "OK". The information here is text/html, so render it accordingly.*
+    This might be read as:
+    
+    > *The server processed your request used HTTP version 1.1, and your response code is 200, or, "OK". The information here is text/html, so render it accordingly.*
 
-    - **the key is to think about the web in terms of requests and responses**
+- the key is to think about the web in terms of requests and responses
 
 ### [4:59 - Django][3]
 - Django is a prebuilt web framwork that takes a lot of the nitty gritty work out and allows us to write python code to quickly build web applications
@@ -50,10 +51,9 @@ Notes will follow the folling format:
     
     This sets up a number of starter files for you by default.
 
-
-
-
-
+- `manage.py` is a file we'll use to interact with the project, but not a file we're going to make a lot (or any) changes to
+- `urls.py` is a table of contents for all the URLs on my application
+- `python manage.py <command>` will be how we use `manage.py`. We can use the `runserver` command to launch our project.
 
 
 [1]: https://youtu.be/w8q0C-C1js4?t=0
