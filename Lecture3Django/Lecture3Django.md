@@ -76,8 +76,7 @@ Notes will follow the folling format:
 
     Note the ability to use Python with the `{}`.
 
-### [27:13 Templates]
-- 
+### [27:13 Templates][5]
 
 [1]: https://youtu.be/w8q0C-C1js4?t=0
 [2]: https://youtu.be/w8q0C-C1js4?t=160
