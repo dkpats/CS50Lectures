@@ -62,6 +62,25 @@ Notes will follow the folling format:
 - once you create a view for the applicaion, you'll need to let it know what URL to visit to get that view. For this, we'll create a new file in the hello directory that contains our URLs
 - then, you need to tell the project what apps to include and the URLs to access them, by updating the `urls.py` file in the project folder
 
+### [20:48 Moving beyond "Hello, world!", Routes][4]
+- Next, we try to create a URL structure, such that `.../hello/<name>` will present a page or at least an HTTP reponse that says `"Hello, <name>"`.
+- We can created placeholders for our urlpatterns. Let's add the following `views.py` in the hello directory:
+    >`def greet(request, name):`
+    >
+    >`return HttpResponse(f"Hello, {name.capitalize()}!")`
+
+    Then, let's update `urls.py` in the hello directory by adding the following to our urlpatterns list:
+    >`def greet(request, name):`
+    > 
+    >`return HttpResponse(f"Hello, {name.capitalize()}!")`
+
+    Note the ability to use Python with the `{}`.
+
+### [27:13 Templates]
+- 
+
 [1]: https://youtu.be/w8q0C-C1js4?t=0
 [2]: https://youtu.be/w8q0C-C1js4?t=160
 [3]: https://youtu.be/w8q0C-C1js4?t=299
+[4]: https://youtu.be/w8q0C-C1js4?t=1249
+[5]: https://youtu.be/w8q0C-C1js4?t=1633
