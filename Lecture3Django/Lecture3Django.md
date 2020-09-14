@@ -77,6 +77,9 @@ Notes will follow the folling format:
     Note the ability to use Python with the `{}`.
 
 ### [27:13 Templates][5]
+- we can return a render function to pass in an entire HTML file
+- the render function can take an option third argument called the context, which is all the information you would like to proivde to the template.
+- 
 
 [1]: https://youtu.be/w8q0C-C1js4?t=0
 [2]: https://youtu.be/w8q0C-C1js4?t=160
