@@ -10,8 +10,11 @@ def index(request):
     })
 
 def entry(request, entry):
+
     markdowner = Markdown()
     htmlEntry = markdowner.convert(util.get_entry(entry))
+    #htmlEntry = htmlEntry[0:len(htmlEntry)]
+
     return render(request, "encyclopedia/entry.html", {
         "title": entry.capitalize(),
         "entry": htmlEntry
