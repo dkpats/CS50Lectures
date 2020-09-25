@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from markdown2 import Markdown
-
+from random import randint
 from . import util
 
 
@@ -64,4 +64,8 @@ def search(request):
     except TypeError: #  this is what was thrown when I tried using an incorrect URL
         show them an error page tailored to their error
     """
-    
+def randomEntry(request):
+
+    entryCount = len(util.list_entries())
+    randomPage = util.list_entries()[randint(0,entryCount-1)]
+    return entry(request, randomPage)
