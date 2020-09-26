@@ -12,12 +12,16 @@ def index(request):
 def entry(request, entry):
 
     markdowner = Markdown()
-    htmlEntry = markdowner.convert(util.get_entry(entry))
+    try:
+        htmlEntry = markdowner.convert(util.get_entry(entry))
+    except TypeError:
+        return errorPage(request, "404: Page not found.")
 
     return render(request, "encyclopedia/entry.html", {
         "title": entry.capitalize(),
         "entry": htmlEntry
     })
+        
 
 def search(request):
     
@@ -43,14 +47,7 @@ def search(request):
 
     if len(substrings):
         resultCount = len(substrings)
-            
-        # if the query does not match the name of an encyclopedia entry, the user should
-        # instead be taken to a search results page that displays a list of all encyclopedia
-        # entries that have the query as a substring. For example, if the search query were
-        # Py, then Python should appear in the search results.
-    
-    #if not pages match even the substring, show "0 results found"
-    #else:
+
     title = f"Resuts for \"{search}\""
     return render(request,"encyclopedia/search.html", {
     "title": title,
@@ -58,14 +55,42 @@ def search(request):
     "resultCount": resultCount
     })
 
-    """
-    try:
-        present the page the client is looking for
-    except TypeError: #  this is what was thrown when I tried using an incorrect URL
-        show them an error page tailored to their error
-    """
 def randomEntry(request):
 
     entryCount = len(util.list_entries())
     randomPage = util.list_entries()[randint(0,entryCount-1)]
     return redirect(entry, randomPage)
+
+def newEntry(request):
+
+    return render(request, "encyclopedia/newEntry.html")
+
+def saveNewEntry(request):
+
+    title = request.GET['Title']
+
+    if title in util.list_entries():
+        return errorPage(request, "An entry with that title already exists.")
+    else:
+        content = request.GET['Entry Content']
+        util.save_entry(title, content)
+        return redirect(entry, title)
+
+def editEntryPage(request):
+    
+    return render(request, "encyclopedia/editEntryPage.html",{
+        "title": request.GET['entry'],
+        "entryContent": util.get_entry(request.GET['entry'])
+    })
+
+def saveEntryEdits(request):
+    print(request.GET)
+    title = request.GET['Title']
+    content = request.GET['Entry Content']
+    util.save_entry(title, content)
+    return redirect(entry, title)
+
+def errorPage(request, message):
+    return render(request, "encyclopedia/errorPage.html", {
+        "message": message
+    })
