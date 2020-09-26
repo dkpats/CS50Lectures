@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from markdown2 import Markdown
 from random import randint
 from . import util
@@ -68,4 +68,4 @@ def randomEntry(request):
 
     entryCount = len(util.list_entries())
     randomPage = util.list_entries()[randint(0,entryCount-1)]
-    return entry(request, randomPage)
+    return redirect(entry, randomPage)
