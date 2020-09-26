@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit {{ title }} Page
+{% endblock %}
+
+{% block body %}
+    <form action="{% url 'saveEntryEdits'%}">
+        <input name="Title" type="text" value="{{ title }}" readonly>
+        <br>
+        <textarea name="Entry Content">{{ entryContent }}</textarea>
+        <br>
+        <input type="submit" value="Save Edits">
+    </form>
+{% endblock %}
